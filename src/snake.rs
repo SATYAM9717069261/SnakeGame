@@ -5,7 +5,8 @@ use std::collections::LinkedList;
 use crate::draw::draw_block;
 
 const SNAKE_COLOR: Color = [0.00, 0.80, 0.80, 1.00];
-#[derive(Clone, Copy)]
+
+#[derive(PartialEq, Copy, Clone)]
 pub enum Direction {
     Up,
     Down,
@@ -107,10 +108,11 @@ impl Snake {
         }
     }
 
-    pub fn retore_tail(&mut self) {
+    pub fn restore_tail(&mut self) {
         let blk = self.tail.clone().unwrap();
         self.body.push_back(blk)
     }
+
     pub fn overlap_tail(&self, x: i32, y: i32) -> bool {
         let mut ch = 0;
         for block in &self.body {
