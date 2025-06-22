@@ -1,0 +1,9 @@
+[package]
+name = "snake"
+version = "0.1.0"
+edition = "2024"
+authors = ["Satyam Mandal <satyam.mandal.77@gmail.com>"]
+
+[dependencies]
+rand = "0.8.5"
+piston_window = "*"
