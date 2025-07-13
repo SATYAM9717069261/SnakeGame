@@ -5,5 +5,8 @@ edition = "2024"
 authors = ["Satyam Mandal <satyam.mandal.77@gmail.com>"]
 
 [dependencies]
+pistoncore-glutin_window = "0.72.0"
 rand = "0.8.5"
 piston_window = "*"
+piston2d-graphics = "0.44.0"
+piston2d-opengl_graphics = "0.85.0"
